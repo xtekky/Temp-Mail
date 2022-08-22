@@ -1,7 +1,20 @@
+# Temp-Mail Client
 
-# Temp Mail
- Python TempMail client using https://temp-mail.org/ with cloudflare bypass
+Python TempMail client using https://temp-mail.org/ with cloudflare bypass
 
+### Requirements
+
+:warning: `node-js` is required for the cloudflare client to run
+
+Running `email.py` requires:
+
+* Python `3.10.5` *(tested under Python 3.10.5)*
+* node-js `16.17.0` *(tested under node-js 16.17.0)*
+
+### Using the TempMail Client
+
+1. Download `email.py` and the `client` folder
+2. You can use this following template code
 
 ```py
 from mail import TempMail
