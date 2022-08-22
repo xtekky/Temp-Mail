@@ -2,12 +2,13 @@
  Python TempMail client using https://temp-mail.org/ with cloudflare bypass
 
 
+```py
+from mail import TempMail
+
 email_client = TempMail()
 token, email = email_client.get_mail()
 print(email)
 print(token)
-
-```py
 
 while True:
     time.sleep(5)
