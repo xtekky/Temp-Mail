@@ -28,7 +28,7 @@ class TempMail:
                 self.session.headers['authorization'] = f'Bearer {data["token"]}'
                 return data["token"], data["mailbox"]
         except:
-            return 'Email creation error.'
+            return 'Email creation error.', False
     
     def fetch_inbox(self) -> json:
         response = self.session.get(
